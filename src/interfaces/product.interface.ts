@@ -2,9 +2,10 @@ export interface IProduct {
   id?: number;
   name: string;
   amount: string;
+  orderId?: number | null;
 }
 
 export interface IProductReturn {
   code: number;
-  result: IProduct;
+  result: IProduct | IProduct[];
 }

@@ -15,4 +15,10 @@ export default class ProductService {
 
     return { code: SUCESS.CREATED, result };
   }
+
+  public async getAll(): Promise<IProductReturn> {
+    const result = await this.model.getAll();
+
+    return { code: SUCESS.OK, result };
+  }
 }
