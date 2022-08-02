@@ -16,11 +16,4 @@ export default class UserModel {
 
     await this.connection.execute<ResultSetHeader>(query, values);
   }
-
-  // public async getAll(): Promise<IProduct[]> {
-  //   const query = 'SELECT * FROM Trybesmith.Products';
-
-  //   const [products] = await this.connection.execute(query);
-
-  //   return products as IProduct[];
 }

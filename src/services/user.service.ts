@@ -18,10 +18,4 @@ export default class UserService {
 
     return { code: SUCESS.CREATED, token };
   }
-
-  // public async getAll(): Promise<IProductReturn> {
-  //   const result = await this.model.getAll();
-
-  //   return { code: SUCESS.OK, result };
-  // }
 }

@@ -16,10 +16,4 @@ export default class UserController {
 
     res.status(code).json({ token });
   };
-
-  // public getAll = async (req: Request, res: Response) => {
-  //   const { code, result } = await this.service.getAll();
-
-  //   res.status(code).json(result);
-  // };
 }
