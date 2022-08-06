@@ -16,4 +16,12 @@ export default class UserModel {
 
     await this.connection.execute<ResultSetHeader>(query, values);
   }
+
+  public async getByUsername(username: string) {
+    const query = 'SELECT * FROM Trybesmith.Users WHERE username = ?';
+
+    const [row] = await this.connection.execute(query, [username]);
+    
+    return row as IUser[];
+  }
 }
