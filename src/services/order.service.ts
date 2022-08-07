@@ -3,7 +3,6 @@ import OrderModel from '../models/order.model';
 import { SUCESS } from '../httpStatusCodes';
 import { IOrderCreated, IOrderGrouped, IOrderReturn } from '../interfaces/order.interface';
 import ProductModel from '../models/product.model';
-import { IProduct } from '../interfaces/product.interface';
 import { OrderSchema, RequiredSchema } from '../schemas/order.schema';
 
 const validateOrder = (productsIds: number[]) => {
