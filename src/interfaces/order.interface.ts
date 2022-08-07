@@ -18,3 +18,11 @@ export interface IOrderReturn {
   code: number;
   result: IOrderGrouped[]
 }
+
+export interface IOrderCreated {
+  code: number;
+  result: {
+    userId: number;
+    productsIds: number[]
+  }
+}

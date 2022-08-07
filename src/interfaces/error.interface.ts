@@ -5,6 +5,7 @@ export enum Errors {
   UnauthorizedError = CLIENT_ERROR.UNAUTHORIZED,
   NotFoundError = CLIENT_ERROR.NOT_FOUND,
   ConflictError = CLIENT_ERROR.CONFLICT,
+  UnprocessableEntityError = CLIENT_ERROR.UNPROCESSABLE_ENTITY,
   InternalServerError = SERVER_ERROR.INTERNAL_SERVER_ERROR,
 }
 

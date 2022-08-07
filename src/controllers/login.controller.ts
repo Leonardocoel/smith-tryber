@@ -22,7 +22,9 @@ export default class LoginController {
 
   public validateToken = async (req:Request, res: Response, next: NextFunction) => {
     const { authorization } = req.headers;
+    
     const user = await this.loginService.validateToken(authorization as string);
+    
     req.user = user;
 
     next();
